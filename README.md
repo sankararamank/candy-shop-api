@@ -1,69 +1,19 @@
-# Candy Shop
-Welcome to the Candy Shop. This repo is a fun project to design, architect and develop an e-commerce backend API in DJango. As some of you may have realised, the name is inspired by 50 Cent's song Candy Shop.
+# Candy Shop API
+Welcome to the Candy Shop API . This repo is a fun project to design, architect and develop an e-commerce backend API in DJango. As some of you may have realised, the name is inspired by 50 Cent's song Candy Shop.
 
-## Features
-Ref: https://www.webalive.com.au/ecommerce-website-features/
+## Setup
+Pre-requisites
+1. Locally installed python and its dependencies such as venv etc.
+2. Locally setup git
 
-Goal - Display products to sell to customers!
+Please follow these steps to setup the project.
+1. Clone the repo locally
+2. Inside the project directory setup virtualenv for the project using `python -m venv venv`
+3. Install python modules using `pip install -r requirements/local.txt`
+4. Test if the server is running using `python manage.py runserver` and open https://localhost:8000 on browser to see the django default page.
 
-Objects - Products, Orders, Reviews, Ratings
+## Contribution Guidelines
+To contribute please follow the guidelines mentioned in the contribution guidelines [here](docs/contributing.md)
 
-Actors - Carriers, Buyergit s and Sellers
-
-General User Actions -
-1. CRUD
-2. Authenticate and authorize (OAuth, passwordless, biometric, 2FA, Autologout)
-3. CRUD Addresses
-
-Seller Actions - 
-1. CRUD Product
-2. List Products w/ Pagination
-3. Revenue charts
-
-Carrier Actions -
-1. Pick up Order
-2. Deliver Order (FSM??)
-
-Buyer Actions - 
-1. Product details, Related products, Featured/Recommended products
-2. Product Search w/ Pagination, Tags and Filters
-   1. Filter type
-      1. Category (clothing, electronics etc)
-      2. Brand
-      3. Price Range
-      4. In stock
-      5. Ratings
-3. Add, Remove and List items in cart
-4. Prebook, Place, List, Cancel, Track Order, Return
-5. CRUD Reviews and Ratings
-6. Share products
-7. Add, remove and view Wishlist
-
-Future Ideas
-1.  **Product Videos**: Videos highlighting product features to increase conversions.
-2.  **FAQ For Products**: Addresses common pre-sales questions about products.
-3.  **FAQ For The Store**: Answers general questions about the store's policies.
-4.  **Email Opt-In**: Encourages visitors to subscribe for future sales and promotions.
-5.  **Push Notifications**: Keeps visitors updated with promotions via browser notifications.
-6.  **Chatbots**: Provides support to customers 24/7 with automated assistance.
-7.  **Coupon Codes**: Offers discounts to keep customers engaged during checkout.
-8. **Gift Registries**: Drives sales by providing registries for special occasions.
-9. **Loyalty Program**: Encourages customer retention with rewards for purchases.
-10. Ads, Promotions and New Releases
-11. 
-
-## Tasks
-
-- [ ] Add .gitignore
-- [ ] Add linters
-- [ ] Play with Jenkins and make a CI/CD pipeline
-- [ ] jmeter monitoring??
-- [ ] Docker file
-- [ ] k8s?
-- [ ] Branching strategy in git
-- [ ] Makefile
-- [ ] 3rd party integrations
-  - [ ] sentry
-  - [ ] datadog
-
-https://fakestoreapi.com/
+## Though Process
+You can find the ideation, design philosophy and other things that was considered while making this project [here](docs/design.md) 
