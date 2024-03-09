@@ -7,10 +7,11 @@ Pre-requisites
 2. Locally setup git
 
 Please follow these steps to setup the project.
-1. Clone the repo locally
+1. Clone the repo locally.
 2. Inside the project directory setup virtualenv for the project using `python -m venv venv`
 3. Install python modules using `pip install -r requirements/local.txt`
-4. Test if the server is running using `python manage.py runserver` and open https://localhost:8000 on browser to see the django default page.
+4. Copy `.env.example` as `.env` and update the `SECRET_KEY` value using known methods. I recommend assigning the string generated [here](https://djecrety.ir/) to `SECRET_KEY` in `.env` file.
+5. Test if the server is running using `python manage.py runserver` and open https://localhost:8000 on browser to see the django default page.
 
 ## Contribution Guidelines
 To contribute please follow the guidelines mentioned in the contribution guidelines [here](docs/contributing.md)
