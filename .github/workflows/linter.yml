@@ -1,0 +1,21 @@
+name: Lint Check
+
+on: [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10"]
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Super-linter
+      uses: super-linter/super-linter@v6.3.0
+      env:
+        # To report GitHub Actions status checks
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
