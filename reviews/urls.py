@@ -4,7 +4,4 @@ from .views import ReviewViewSet
 
 router = DefaultRouter()
 router.register("", ReviewViewSet)
-
-urlPatterns = [
-    path("", include(router.urls)),
-]
+urlpatterns = router.urls
